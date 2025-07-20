@@ -1,0 +1,8 @@
+<nav class="navbar">
+    <ul>
+        @for(noteMetadata of notes.noteTitles(); track noteMetadata.id) {
+        <li><a [routerLink]="'/' + noteMetadata.id">{{noteMetadata.id.substring(0,8)}} - {{noteMetadata.title}}</a></li>
+        }
+        <li (click)="notes.insertNewNote()" (keyup)="notes.insertNewNote()">+ New note</li>
+    </ul>
+</nav>

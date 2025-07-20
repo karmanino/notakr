@@ -1,0 +1,13 @@
+:host {
+    flex-grow: 1;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.input-content {
+    flex-grow: 1;
+}

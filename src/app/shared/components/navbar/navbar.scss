@@ -1,0 +1,11 @@
+.navbar {
+    max-width: 25dvw;
+}
+
+a {
+  white-space: nowrap;       /* Prevent text from wrapping to the next line */
+  overflow: hidden;          /* Hide anything that overflows */
+  text-overflow: ellipsis;   /* Show ellipsis (…) if the text is too long */
+  display: block;            /* Ensure it behaves like a block element (1 per line) */
+  max-width: 100%;           /* Prevent it from stretching out */
+}
